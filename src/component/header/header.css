@@ -1,0 +1,10 @@
+nav > div {
+  display: flex;
+  background-color: rgb(37, 36, 36);
+  justify-content: center;
+}
+nav > div a {
+  margin: 10px 15px;
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=header.css.map */
