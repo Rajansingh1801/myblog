@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header({ isAuth, setIsAuth, logout }) {
   return (
