@@ -8,17 +8,17 @@ function Header({ isAuth, setIsAuth, logout }) {
       <nav>
         <div>
           <Link to="Homepage">Home</Link>
-          <Link to="Login">Login</Link>
-          <Link to="Createpost">Createpost</Link>
+          {/* <Link to="Login">Login</Link>
+          <Link to="Createpost">Createpost</Link> */}
 
-          {/* {!isAuth ? (
+          {!isAuth ? (
             <Link to="/Login">Login</Link>
           ) : (
             <>
               <Link to="/Createpost">Createpost</Link>
               <Link onClick={logout}>Logout</Link>
             </>
-          )} */}
+          )}
         </div>
       </nav>
     </div>
