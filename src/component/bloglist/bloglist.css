@@ -1,0 +1,55 @@
+.blog-list {
+  padding: 40px 25px;
+  background-color: white;
+  margin: 20px;
+  width: 30%;
+  border-radius: 40px;
+}
+.blog-list .container {
+  height: 600px;
+  position: relative;
+  border-width: 3px;
+  width: 100%;
+}
+.blog-list .container .blog-img {
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  -o-object-fit: fill;
+     object-fit: fill;
+  justify-content: center;
+}
+.blog-list .container .blogimg {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.blog-list .container .blogimg:hover {
+  transform: scale(1.1);
+  transition: 400ms ease-in-out;
+}
+.blog-list .container .profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.blog-list .container .profile-img:hover {
+  border: 1px solid black;
+  outline: 6px double #262a56;
+  transition: 600ms;
+}
+.blog-list .container .viewbtn {
+  padding: 10px 20px;
+  background: #3edad7;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #3edad7;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+.blog-list .container .viewbtn:hover {
+  background-color: white;
+  color: black;
+  transition: 400ms ease-in-out;
+}/*# sourceMappingURL=bloglist.css.map */

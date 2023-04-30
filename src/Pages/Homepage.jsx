@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase/firebase-config";
-import { getDocs, collection, doc } from "firebase/firestore";
+import { getDocs, collection } from "firebase/firestore";
+import Bloglist from "../component/bloglist/bloglist";
+import Mainbody from "../component/mainbody/mainbody";
 
 function Homepage() {
   const [postData, setPostData] = useState([]);
@@ -14,15 +16,14 @@ function Homepage() {
     getPosts();
   }, []);
   return (
-    <div>
-      {postData.map((postContent) => {
-        return (
-          <div>
-            <p>{postContent.title}</p>
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <Mainbody />
+      <div className="d-flex justify-content-between mt-4 flex-wrap w-100 bg-F0F0F0">
+        {postData.map((postContent) => {
+          return <Bloglist postContent={postContent} />;
+        })}
+      </div>
+    </>
   );
 }
 
