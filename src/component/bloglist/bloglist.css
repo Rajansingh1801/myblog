@@ -37,7 +37,11 @@
   outline: 6px double #262a56;
   transition: 600ms;
 }
-.blog-list .container .viewbtn {
+.blog-list .container .viewbtnCont {
+  position: absolute;
+  bottom: 0px;
+}
+.blog-list .container .viewbtnCont .viewbtn {
   padding: 10px 20px;
   background: #3edad7;
   color: white;
@@ -45,10 +49,8 @@
   font-size: 16px;
   border: 2px solid #3edad7;
   border-radius: 20px;
-  position: absolute;
-  bottom: 0px;
 }
-.blog-list .container .viewbtn:hover {
+.blog-list .container .viewbtnCont .viewbtn:hover {
   background-color: white;
   color: black;
   transition: 400ms ease-in-out;

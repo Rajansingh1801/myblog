@@ -1,11 +1,17 @@
 import React from "react";
 import "./bloglist.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { collection, deleteDoc, doc } from "firebase/firestore";
+import { db } from "../../firebase/firebase-config";
 
 function Bloglist({ postContent }) {
   const navigate = useNavigate();
   const clickhandler = () => {
     navigate("/blogdetails", { state: { postContent: postContent } });
+  };
+  const deletePost = async (id) => {
+    const postDocs = doc(db, "postContent", id);
+    await deleteDoc(postDocs);
   };
   return (
     <div className="blog-list">
@@ -30,9 +36,16 @@ function Bloglist({ postContent }) {
 
         <h2 className="py-1">{postContent.title}</h2>
 
-        <div>
+        <div className="viewbtnCont d-flex justify-content-between w-100 align-items-center">
           <button className="viewbtn" onClick={clickhandler}>
             View Blog
+          </button>
+          <button
+            onClick={() => {
+              deletePost(postContent.id);
+            }}
+          >
+            X
           </button>
         </div>
       </div>

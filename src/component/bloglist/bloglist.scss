@@ -35,21 +35,23 @@
       outline: 6px double #262a56;
       transition: 600ms;
     }
-    .viewbtn {
-      padding: 10px 20px;
-      background: #3edad7;
-      color: white;
-      font-weight: 600;
-      font-size: 16px;
-      border: 2px solid #3edad7;
-      border-radius: 20px;
+    .viewbtnCont {
       position: absolute;
       bottom: 0px;
-    }
-    .viewbtn:hover {
-      background-color: white;
-      color: black;
-      transition: 400ms ease-in-out;
+      .viewbtn {
+        padding: 10px 20px;
+        background: #3edad7;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        border: 2px solid #3edad7;
+        border-radius: 20px;
+      }
+      .viewbtn:hover {
+        background-color: white;
+        color: black;
+        transition: 400ms ease-in-out;
+      }
     }
   }
 }
