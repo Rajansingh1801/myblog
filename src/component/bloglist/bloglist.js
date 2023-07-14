@@ -1,7 +1,7 @@
 import React from "react";
 import "./bloglist.css";
 import { useNavigate } from "react-router-dom";
-import { collection, deleteDoc, doc } from "firebase/firestore";
+import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../../firebase/firebase-config";
 
 function Bloglist({ postContent }) {
@@ -41,11 +41,12 @@ function Bloglist({ postContent }) {
             View Blog
           </button>
           <button
+            className="delbtn"
             onClick={() => {
               deletePost(postContent.id);
             }}
           >
-            X
+            ❌
           </button>
         </div>
       </div>

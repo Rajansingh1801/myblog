@@ -14,7 +14,7 @@ function Homepage() {
       setPostData(data.docs.map((item) => ({ ...item.data(), id: item.id })));
     };
     getPosts();
-  }, []);
+  });
   return (
     <>
       <Mainbody />

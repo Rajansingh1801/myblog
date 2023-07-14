@@ -54,4 +54,10 @@
   background-color: white;
   color: black;
   transition: 400ms ease-in-out;
+}
+
+.delbtn {
+  background-color: #ffffff;
+  border-color: red;
+  border-radius: 50%;
 }/*# sourceMappingURL=bloglist.css.map */
