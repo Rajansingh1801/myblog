@@ -26,7 +26,7 @@ function Login({ setIsAuth }) {
           <div className="text-center">
             <h1>Login With</h1>
             <div>
-              <img src={logo} className="logo-img" />
+              <img src={logo} alt="login img" className="logo-img" />
             </div>
             <button onClick={siginwithGoogle}>Login with Google</button>
           </div>

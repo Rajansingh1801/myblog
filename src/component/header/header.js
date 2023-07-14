@@ -9,7 +9,7 @@ function Header({ isAuth, logout }) {
       <nav>
         <div className="container d-flex justify-content-between">
           <div>
-            <img src={img1} />
+            <img src={img1} alt="img" />
           </div>
           <div>
             <Link to="Homepage">Home</Link>

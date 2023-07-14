@@ -91,7 +91,7 @@ function Createpost({ isAuth }) {
     if (!isAuth) {
       navigate("/Homepage");
     }
-  }, []);
+  });
 
   return (
     <div className="createPage">
