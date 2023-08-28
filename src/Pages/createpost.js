@@ -110,7 +110,7 @@ function Createpost({ isAuth }) {
           />
         </div>
         <div className="my-1">
-          <label>Uplaod Banner Image</label>
+          <label>Uplaod Banner Images</label>
           <input
             type="file"
             onChange={(event) => {
